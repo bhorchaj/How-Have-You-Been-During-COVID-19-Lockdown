@@ -259,10 +259,14 @@ img{
   height: 60%;
   width: 60%;
 }
-  
+
 img{
   height: 80%;
   width: 80%;
+}
+
+.top-buffer{
+  padding-top: 80px;
 }
 
 
