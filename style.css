@@ -120,6 +120,7 @@ p {
 
 footer {
   background-color: #DBE9EE;
+  margin-top: 100px;
   text-align: center;
   height: 100px;
 }
@@ -267,6 +268,10 @@ img{
 
 .top-buffer{
   margin-top: 80px;
+}
+
+.force{
+  justify-content: center;
 }
 
 
