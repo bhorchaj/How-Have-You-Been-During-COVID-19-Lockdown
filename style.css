@@ -17,9 +17,7 @@ body {
 }
 
 @media screen and (max-width: 640px){
-  body{
-    padding-top: 60px;
-  }
+  
 
 }
 
@@ -31,11 +29,6 @@ html{
 
 main{
   flex:1;
-}
-
-@media screen and (max-width: 640px){
-.top-buffer { margin-top:40px; }
-
 }
 
 
@@ -187,13 +180,13 @@ footer {
 
 #start{
   border-radius: 25%;
+  background: #C0D6DF;
   animation: updown 1.5s infinite;
-}
-
-#start:hover{
   box-shadow:  5px 10px #888888;
 }
-#start1:hover{
+
+ 
+#start1{
   color:#EB9605;
 }
 
@@ -203,11 +196,11 @@ footer {
 
 #lets{
    animation: updown 1.5s infinite;
-}
-#lets:hover{
+   background: #C0D6DF;
   box-shadow:  5px 10px #888888;
 }
-#lets1:hover{
+
+#lets1{
   color:#EB9605;
 }
 
