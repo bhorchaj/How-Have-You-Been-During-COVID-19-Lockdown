@@ -159,7 +159,7 @@ footer {
 
 
 
-.fade {
+.fade1 {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2s;
   animation-name: fade;
@@ -202,12 +202,12 @@ footer {
 
 
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade1 {
   from {opacity: .1}
   to {opacity: 1}
 }
 
-@keyframes fade {
+@keyframes fade1 {
   from {opacity: .1}
   to {opacity: 1}
 }
@@ -275,7 +275,7 @@ img{
 }
 
 footer{
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 
