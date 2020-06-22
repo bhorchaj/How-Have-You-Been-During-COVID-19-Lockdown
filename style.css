@@ -271,7 +271,11 @@ img{
 }
 
 .force{
-  justify-content: center;
+  justify-content: center !important;
+}
+
+footer{
+  margin-top: 150px;
 }
 
 
