@@ -39,7 +39,7 @@ header {
   border-bottom: 1px solid #466995;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 50;
   opacity: 0.95;
 }
 
@@ -100,6 +100,25 @@ h4 {
   text-transform: uppercase
 }
 
+
+h5 {
+  color: #466995;
+  font-family: 'FuturaHandwritten', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: #466995;
+  font-family: 'FuturaHandwritten', sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
 p {
   color: #333;
   font-family: 'Varela Round', sans-serif;
@@ -113,9 +132,10 @@ p {
 .p1{
   font-family: 'Varela Round', sans-serif;
   font-size: 13px;
-  padding-top: 80px;
   text-indent: 0px;
   padding-bottom: 0;
+  position: relative;
+  top:100px;
 }
 
 footer {
@@ -128,7 +148,7 @@ footer {
 .welcome {
   background-color: #DBE9EE;
   box-sizing: border-box;
-  padding-top: 40px;
+  padding-top: 70px;
   padding-bottom: 120px;
   position:relative;
   top: 50px;
@@ -152,11 +172,6 @@ footer {
   box-shadow:  5px 10px #888888;
 }
 
-.my_foot{
-  padding: 0;
-  padding-top: 30px;
-}
-
 
 
 .fade1 {
@@ -169,8 +184,13 @@ footer {
 
 .my_shadow{
   animation: opacity .75s ease-in-out infinite alternate;
+  width: 12%;
 }
 
+.my_shadow1{
+  animation: opacity .75s ease-in-out infinite alternate;
+  width: 20%;
+}
 
 
 
@@ -179,6 +199,10 @@ footer {
   background: #C0D6DF;
   animation: updown 1.5s infinite;
   box-shadow:  5px 10px #888888;
+}
+
+#start:hover{
+  background: #91b1b8 ;
 }
 
  
@@ -194,6 +218,10 @@ footer {
    animation: updown 1.5s infinite;
    background: #C0D6DF;
   box-shadow:  5px 10px #888888;
+}
+
+#lets:hover{
+  background:  #91b1b8;
 }
 
 #lets1{
@@ -240,6 +268,7 @@ footer {
 
 code{
   color:black;
+  font-size: .8rem;
 }
 
 
@@ -278,6 +307,30 @@ footer{
   margin-top: 100px;
 }
 
+p{
+  text-indent: 80px;
+}
+
+
+.my_shadow{
+  animation: opacity .75s ease-in-out infinite alternate;
+  width: 42%;
+}
+
+.my_shadow1{
+  animation: opacity .75s ease-in-out infinite alternate;
+  width: 85%;
+}
+
+h5{
+  font-size: .85rem;
+}
+h6{
+  font-size: .77rem;
+}
+code{
+  font-size: .7rem;
+}
 
 
 }
