@@ -3,6 +3,27 @@
 <head>
   <title>How Have You Been During COVID-19 Lockdown?</title>
 
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
 
 
@@ -22,67 +43,92 @@
 
 
 
-  <main class="container pt-3">
+  <main class="container">
 
 
 
-   <div class="question fade" style="padding-top: 100px;" >
-    <img src="gifs/project_1592760413692.gif" height="20%" width="20%">
-    <h2>This is a fun and interactive comic-survey (appr0x. 7mins). <br>Do you wanna begin?</h2>
-
-     <div id="start" class="answer" onclick="plusSlides(1);playAudio2();backgroundmusic();">
-      <h3 id="start1">Start !</h3>
+  <div class=" row row-cols-1 question fade" style="padding-top: 100px;" >
+    <div class="col">
+      <img src="gifs/project_1592760413692.gif" height="20%" width="20%">
+    </div>
+    <div class="col">
+      <h2>This is a fun and interactive comic-survey (appr0x. 7mins). <br>Do you wanna begin?</h2>
+    </div>
+    <div class="col">
+      <div id="start" class="answer" onclick="plusSlides(1);playAudio2();backgroundmusic();">
+        <h3 id="start1">Start !</h3>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+      <img class="my_shadow" src="shadow.37ca19f4.png" width="10%">
     </div>
   </div>
-  <img class="my_shadow" src="shadow.37ca19f4.png" width="10%">
 
+
+
+
+
+
+  <div class="row row-cols-1 question fade">
+    <div class="col welcome ">
+      <h1><q>Use it up, wear it out, make do or do without!</q></h1>
+      <p>COVID-19 Lockdown has been emotionally stressful for some people, while for others, it has been an impromptu time-out from their hectic routines, hence helping  them rediscover their hobbies at their leisure! While it is okay, however you have spent your quarantine, in your own way, do you want to know how YOU have been, compared to others, during this lockdown? Were you too stressed? Were you careless? Or did you just do fine?</p>
+      <div class="col">
+        <div id="lets" class="answer" onclick="plusSlides(1);playAudio1();">
+          <h3 id="lets1">Let's Find Out !</h3>
+        </div>
+      </div>
+      <div class="col">
+        <img class="my_shadow" src="shadow.37ca19f4.png" height="20px" width="20%">
+      </div>
+    </div>
+    <div class="col">
+      <p class="p1">Disclaimer: This survey assumes you have had certain privileges during this quarantine, like staying at home and being able to spend most of the time with family or doing your own favourite things alone, not in much distress. We know a lot of people were not this privileged, and we are greatly inspired and extend our huge support to them.</p>
+    </div>
   </div>
-
-
-
-
-  <div class="question fade">
   
-  <div class="welcome">
-    <h1><q>Use it up, wear it out, make do or do without!</q></h1>
-    <p>COVID-19 Lockdown has been emotionally stressful for some people, while for others, it has been an impromptu time-out from their hectic routines, hence helping  them rediscover their hobbies at their leisure! While it is okay, however you have spent your quarantine, in your own way, do you want to know how YOU have been, compared to others, during this lockdown? Were you too stressed? Were you careless? Or did you just do fine?</p>
-
-    <div id="lets" class="answer" onclick="plusSlides(1);playAudio1();">
-      <h3 id="lets1">Let's Find Out !</h3>
-    </div>
-  </div>
-  <img class="my_shadow1" src="shadow.37ca19f4.png" height="20px" width="20%">
-
-
-     <p class="p1">Disclaimer: This survey assumes you have had certain privileges during this quarantine, like staying at home and being able to spend most of the time with family or doing your own favourite things alone, not in much distress. We know a lot of people were not this privileged, and we are greatly inspired and extend our huge support to them.</p>
-  </div>
-  
 
 
 
 
 
 
-  <div class="question fade">
-    <img src="gifs/project_1592740339549.gif" height="40%" width="40%">
 
-  <div style="position: relative; bottom: 30px; z-index: 10;">
-    <h4>Question 1</h4>
-    <h2>Were you at home, or were you at some other place, during the lockdown period?</h2>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>At Home</h3>
+
+  <div class="row row-cols-1 question fade" style="padding-top: 20px;">
+    <div class="col">
+      <img src="gifs/project_1592740339549.gif" height="40%" width="40%">
     </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Some Other Place</h3>
-    </div>
+    <div style="position: relative; bottom: 20px; z-index: 10;">
+      <div class="col">
+        <h4>Question 1</h4>
+      </div>
+      <div class="col">
+        <h2>Were you at home, or were you at some other place, during the lockdown period?</h2>
+      </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Came Home In The Middle Of The Lockdown</h3>
-    </div>
-  </div>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>At Home</h3>
+          </div>
+        </div>
 
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Some Other Place</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Came Home In The Middle Of The Lockdown</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
  
