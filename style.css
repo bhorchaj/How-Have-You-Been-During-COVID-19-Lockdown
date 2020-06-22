@@ -307,9 +307,6 @@ footer{
   margin-top: 100px;
 }
 
-p{
-  text-indent: 80px;
-}
 
 
 .my_shadow{
@@ -330,6 +327,16 @@ h6{
 }
 code{
   font-size: .7rem;
+}
+
+p{
+  text-indent: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p1{
+  font-size: 10px;
 }
 
 
