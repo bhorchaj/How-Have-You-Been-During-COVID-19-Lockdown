@@ -77,7 +77,7 @@ h3 {
   color: #466995;
   font-family: 'FuturaHandwritten', sans-serif;
   font-size: 18px;
-  text-align: center;
+  word-wrap: break-word;
   font-weight: bold;
   text-transform: uppercase;
   padding: 30px;
@@ -120,8 +120,8 @@ footer {
 .welcome {
   background-color: #DBE9EE;
   box-sizing: border-box;
-  padding: 40px 40px 120px 40px;
-  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 120px;
   position:relative;
   top: 50px;
 }
@@ -160,16 +160,6 @@ footer {
 
 
 .my_shadow{
-  padding-left: 607px;
-  position: relative;
-  bottom: 8px;
-  animation: opacity .75s ease-in-out infinite alternate;
-}
-
-.my_shadow1{
- padding-left: 8px;
- position: relative;
- bottom: 50px;
   animation: opacity .75s ease-in-out infinite alternate;
 }
 
@@ -240,3 +230,6 @@ footer {
   }
 }
 
+code{
+  color:black;
+}
