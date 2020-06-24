@@ -154,6 +154,13 @@ footer {
   top: 50px;
 }
 
+.finisher {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
 
 .question {
   text-align: center;
@@ -208,6 +215,12 @@ footer {
  
 #start1{
   color:#EB9605;
+}
+
+
+.endcredits{
+  position: relative;
+  top: 50px;
 }
 
 
@@ -282,6 +295,7 @@ img{
   width: 40%;
 }
 
+
 @media screen and (max-width: 640px){
   
 #img1{
@@ -301,6 +315,8 @@ img{
 .force{
   justify-content: center !important;
 }
+
+
 
 footer{
   margin-top: 100px;
@@ -338,6 +354,17 @@ p{
   font-size: 10px;
 }
 
+
+}
+
+
+
+@media screen and (min-width: 1008px){
+
+
+.forceshift{
+  text-align: start;
+}
 
 }
 
