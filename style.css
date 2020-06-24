@@ -33,6 +33,11 @@ footer {
   width: 100%;
 }
 
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
 
 header {
   background-color: #466995;
@@ -242,6 +247,47 @@ footer {
 }
 
 
+.slide_in{
+  animation: slideme 1.9s ease-in;
+}
+
+
+@keyframes slideme{
+  0%{
+    transform: skewX(53deg) translateX(-500px);
+    opacity: 0;
+  }
+
+  60%{
+    transform: translateX(0px);
+  }
+
+  62%{
+    transform: skewX(0deg) translateX(30px);
+  }
+
+  70%{
+    transform:skew(-20deg);
+    opacity: 1;
+  }
+
+  80%{
+    transform: skew(0deg) translate(0);
+  }
+
+  90%{
+    transform: skew(-50deg);
+  }
+
+  100%{
+     transform: skewX(0deg);
+  }
+}
+
+
+
+
+
 
 @-webkit-keyframes fade1 {
   from {opacity: .1}
@@ -352,6 +398,10 @@ p{
 
 .p1{
   font-size: 10px;
+}
+
+.forcereduce{
+  font-size: 0.5em !important;
 }
 
 
