@@ -285,26 +285,23 @@
     <div class="col">
       <img src="gifs/project_1592657917624.gif">
     </div>
+    <div class="col">
+      <h4>Question 6</h4>
+    </div>
+    <div class="col">
+      <h2>Did you try a new instrument, or developed on an instrument you already play?</h2>
+    </div>
 
-    <div style="position: relative; bottom: 5px; z-index: 10;">
-      <div class="col">
-        <h4>Question 6</h4>
-      </div>
-      <div class="col">
-        <h2>Did you try a new instrument, or developed on an instrument you already play?</h2>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-2">
-        <div class="col d-flex justify-content-end force">
-          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
-          <h3>Yes, I did!</h3>
-          </div>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col d-flex justify-content-end force">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+        <h3>Yes, I did!</h3>
         </div>
+      </div>
 
-        <div class="col d-flex justify-content-start force">
-          <div class="answer" onclick="plusSlides(1);playAudio();">
-            <h3>Not really</h3>
-          </div>
+      <div class="col d-flex justify-content-start force">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>Not really</h3>
         </div>
       </div>
     </div>
@@ -1037,7 +1034,7 @@
 
 
   <div class="row row-cols-1 question fade1" style="padding-top: 150px;">
-    <div class="col finisher">
+    <div class="col finisher slide_in">
       <div class="col d-flex justify-content-start force">
         <h1 style="font-family: 'FuturaHandwritten', sans-serif;"> This quarantine:</h1>
         <br><br>
@@ -1047,11 +1044,12 @@
       </div>
     </div>
     <div class="col endcredits">
-      <h3>Thank You For Taking Our Survey</h3>
+      <h2 style="color: #466995;">Thank You For Taking Our Survey :)</h2>
     </div>
-    <div class="col endcredits" style="padding-top: 50px;">
-      <h5>Website Design: Swastik Banerjee <br> 
-      Animations: Amrita Bhorchaj</h5>  
+    <div class="col endcredits forcereduce" style="padding-top: 50px;">
+      <h3>Website Design: <a href="https://swastik.wtf/" target="_blank" style="outline: none;">Swastik Banerjee</a> <br> 
+      Animations: <a href="https://twitter.com/bhorchaj" target="_blank" style="outline:">Amrita Bhorchaj</a></h3>
+      <h5 style="position: relative; bottom: 30px;"><b><a href="mailto:bhattacharyaamrita2001@gmail.com" target="_blank" style="outline: none;">Contact For Collab</a></b></h5>
     </div>
   </div>
 
@@ -1252,11 +1250,58 @@
     var result5=(tot_ppl_less_than_u5/tot_ppl5)*100;
 
 
+  //giving non-zero values
+    if(result1===0)
+      result1=2;
+    if(result2===0)
+      result2=2;
+    if(result3===0)
+      result3=2;
+    if(result4===0)
+      result4=2;
+    if(result5===0)
+      result5=2;
 
-    document.getElementById("MyEdit").innerHTML = "<h3>You were <b>more privileged</b> than <u>" + Math.floor(result1)+"% </u> of other people." +"<br><br>" + "You <b>showed a tendency to be productive</b> more than <u>" + Math.floor(result2)+"% </u> of other people." +"<br><br>"
-      +"You were <b>more anxious</b> than <u>" + Math.floor(result3)+"% </u> of other people."+"<br><br>"
-      +"You <b>were probably addicted to electronic devices</b> more than <u>" + Math.floor(result4)+"% </u> of other people."+"<br><br>"
-      +"You were <b>more cautious about your health</b> than <u>" + Math.floor(result5)+"% </u> of other people.</h3>";
+
+
+  //Printing the analysis report
+
+    document.getElementById("MyEdit").innerHTML = 
+    `<h3>You were <b style="color:#EB9605;">more privileged</b> than <u style="color:#EB9605;">${Math.floor(result1)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result1)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result1)}%">${Math.floor(result1)}% MORE PRIVILEGED
+        </div>
+      </div>
+      <br><br>
+      You <b style="color:#EB9605;">showed a tendency to be productive</b> more than <u style="color:#EB9605;">${Math.floor(result2)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result2)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result2)}%">${Math.floor(result2)}% MORE PRODUCTIVE
+        </div>
+      </div>
+      <br><br>
+      You were <b style="color:#EB9605;">more anxious</b> than <u style="color:#EB9605;">${Math.floor(result3)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result3)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result3)}%">${Math.floor(result3)}% MORE ANXIOUS
+        </div>
+      </div>
+      <br><br>
+      You were likely <b style="color:#EB9605;">addicted to electronic devices</b> more than <u style="color:#EB9605;">${Math.floor(result4)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result4)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result4)}%">${Math.floor(result4)}% MORE ADDICTED
+        </div>
+      </div>
+      <br><br>
+      You were <b style="color:#EB9605;">cautious about your health</b> more than <u style="color:#EB9605;">${Math.floor(result5)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result5)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result5)}%">${Math.floor(result5)}% MORE CAUTIOUS
+        </div>
+      </div>
+      </h3>`;
   }
   </script>
 
@@ -1270,7 +1315,7 @@
 <footer class="container-fluid py-3">
   <div class="row row-cols-1 no-gutter">
     <div class="col">
-      <h5>This website is open source</h5><a href="https://github.com/bhorchaj/How-Have-You-Been-During-COVID-19-Lockdown" style="outline: none;"><h6>See Github</h6></a>
+      <h5>This website is open source</h5><a href="https://github.com/bhorchaj/How-Have-You-Been-During-COVID-19-Lockdown" target="_blank" style="outline: none;"><h6>See Github</h6></a>
     </div>
     <div class="col">
       <code>Copyright &copy; Swastik &amp; Amrita</code>
