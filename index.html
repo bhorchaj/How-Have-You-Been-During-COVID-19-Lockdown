@@ -1,214 +1,187 @@
 <!DOCTYPE html>
 <html>
+
+<!--Head begins-->
 <head>
   <title>How Have You Been During COVID-19 Lockdown?</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"/>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
 
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> 
+
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
+<!--Head ends-->
+
+
+
+
+
+<!--Body begins-->
 <body>
 
-
+  <!--Header begins-->
   <header>
     <ul>
       <li>How have you been during the COVID-19 lockdown?</li>
-      
     </ul>
   </header>
+  <!--Header ends-->
+
+
+  <!--main class begins-->
+  <main class="container">
 
 
 
-  <main class="container pt-3">
 
+  <!--description of the project-->
 
-
-   <div class="question fade" style="padding-top: 100px;" >
-    <img src="gifs/project_1592760413692.gif" height="20%" width="20%">
-    <h2>This is a fun and interactive comic-survey (appr0x. 7mins). <br>Do you wanna begin?</h2>
-
-     <div id="start" class="answer" onclick="plusSlides(1);playAudio2();backgroundmusic();">
-      <h3 id="start1">Start !</h3>
+  <div class=" row row-cols-1 question fade1 top-buffer" style="padding-top: 100px;" >
+    <div class="col">
+      <img id="img1" src="gifs/project_1592760413692.gif">
+    </div>
+    <div class="col" style="padding-top: 40px;">
+      <h2>This is a fun and interactive comic-survey <span style="font-size: 16px;">(of appr0x. 5mins).</span> <br>Do you wanna begin?</h2>
+    </div>
+    <div class="col">
+      <div id="start" class="answer" onclick="plusSlides(1);playAudio1();backgroundmusic();">
+        <h3 id="start1">Start !</h3>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+      <img class="my_shadow" src="shadow.37ca19f4.png">
     </div>
   </div>
-  <img class="my_shadow" src="shadow.37ca19f4.png" width="10%">
 
+  <!--description ends-->
+
+
+
+
+
+
+  <!--introduction-->
+
+
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col welcome ">
+      <h1><q>Use it up, wear it out, make do or do without!</q></h1>
+      <p>COVID-19 Lockdown has been emotionally stressful for some people, while for others, it has been an impromptu time-out from their hectic routines, hence helping  them rediscover their hobbies at their leisure! While it is okay, however you have spent your quarantine, in your own way, do you want to know how YOU have been, compared to others, during this lockdown? Were you too stressed? Were you careless? Did you show a bit too much of productive nature? Or did you do just fine?</p>
+      <div class="col">
+        <div id="lets" class="answer" onclick="plusSlides(1);playAudio1();">
+          <h3 id="lets1">Let's Find Out !</h3>
+        </div>
+      </div>
+      <div class="col">
+        <img class="my_shadow1" src="shadow.37ca19f4.png">
+      </div>
+    </div>
+    <div class="col">
+      <p class="p1">Disclaimer: This survey assumes you have had certain privileges during this quarantine, like staying at home and being able to spend most of the time with family or doing your own favourite things alone, not in much distress. We know a lot of people were not this privileged, and we are greatly inspired and extend our huge support to them.</p>
+    </div>
   </div>
-
-
-
-
-  <div class="question fade">
   
-  <div class="welcome">
-    <h1><q>Use it up, wear it out, make do or do without!</q></h1>
-    <p>COVID-19 Lockdown has been emotionally stressful for some people, while for others, it has been an impromptu time-out from their hectic routines, hence helping  them rediscover their hobbies at their leisure! While it is okay, however you have spent your quarantine, in your own way, do you want to know how YOU have been, compared to others, during this lockdown? Were you too stressed? Were you careless? Or did you just do fine?</p>
+  <!--introduction ends-->
 
-    <div id="lets" class="answer" onclick="plusSlides(1);playAudio1();">
-      <h3 id="lets1">Let's Find Out !</h3>
+
+
+
+
+
+
+
+
+
+  <!--question section begins-->
+
+
+  <!--question 1-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 20px;">
+    <div class="col">
+      <img src="gifs/project_1592740339549.gif">
     </div>
-  </div>
-  <img class="my_shadow1" src="shadow.37ca19f4.png" height="20px" width="20%">
-
-
-     <p class="p1">Disclaimer: This survey assumes you have had certain privileges during this quarantine, like staying at home and being able to spend most of the time with family or doing your own favourite things alone, not in much distress. We know a lot of people were not this privileged, and we are greatly inspired and extend our huge support to them.</p>
-  </div>
-  
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592740339549.gif" height="40%" width="40%">
-
-  <div style="position: relative; bottom: 30px; z-index: 10;">
-    <h4>Question 1</h4>
-    <h2>Were you at home, or were you at some other place, during the lockdown period?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>At Home</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Some Other Place</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Came Home In The Middle Of The Lockdown</h3>
-    </div>
-  </div>
-
-  </div>
-
- 
-
-
-
-
-
-
-
-  
-  <div class="question fade" style="padding-top: 80px;" >
-    <img src="gifs/project_1592658065062.gif" height="40%" width="40%">
-
-    <div style="position: relative; bottom: 150px; z-index: 10;">
-
-    <h4>Question 2</h4>
-    <h2>Did you learn any new technical skill during this period?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>No</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Had Started, But Couldn't Find The Motivation To Continue</h3>
-    </div>
-  </div>
-
-  </div>
-
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592658044021.gif" height="40%" width="40%">
-    <h4>Question 3</h4>
-    <h2>Did you try your hands at cooking/ baking?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yeah</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>No, Not really</h3>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592657759738.gif" height="40%" width="40%">
-    
-
-    <h4>Question 4</h4>
-    <h2>Did you learn any foreign language?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yeah</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>No man</h3>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592657825989.gif" height="40%" width="40%">
-    <div style="position: relative; bottom: 80px; z-index: 10;">
-
-    <h4>Question 5</h4>
-    <h2>Did you read any new book?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Nope</h3>
-    </div>
-  </div>
-
-  </div>
-
-  
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592657917624.gif" height="40%" width="40%">
 
     <div style="position: relative; bottom: 20px; z-index: 10;">
-    <h4>Question 6</h4>
-    <h2> Did you try a new instrument, or developed on an instrument you already play?</h2>
+      <div class="col">
+        <h4>Question 1</h4>
+      </div>
+      <div class="col">
+        <h2>Were you at home, or were you at some other place, during the lockdown period?</h2>
+      </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes, I did!</h3>
-    </div>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio(); cntpp(1);">
+          <h3>At Home</h3>
+          </div>
+        </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio()">
-      <h3>Not really</h3>
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Some Other Place</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(1);">
+            <h3>Came Home In The Middle Of The Lockdown</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+
+
+
+
+
+  <!--question2-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 100px;">
+    <div class="col">
+      <img src="gifs/project_1592658065062.gif">
+    </div>
+
+    <div style="position: relative; bottom: 50px; z-index: 10;">
+      <div class="col">
+        <h4>Question 2</h4>
+      </div>
+      <div class="col">
+        <h2>Did you learn any new skill during this period?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+          <h3>Yes</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>No</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+            <h3>Had Started, But Couldn't Find The Motivation To Continue</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -216,312 +189,580 @@
 
 
 
+  <!--question 3-->
 
-  <div class="question fade" style="padding-top: 80px;" >
-    <img src="gifs/project_1592748425842.gif" height="40%" width="40%">
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col">
+      <img src="gifs/project_1592658044021.gif">
+    </div>
+    <div style="position: relative; top: 30px; z-index: 10;">
+      <div class="col">
+        <h4>Question 3</h4>
+      </div>
+      <div class="col">
+        <h2>Did you try your hands at cooking/ baking?</h2>
+      </div>
 
-    <div style="position: relative; bottom: 150px; z-index: 10;">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col d-flex justify-content-end force">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+          <h3>Yeah</h3>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-start force">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>No, Not really</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 4-->
+
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col">
+      <img src="gifs/project_1592657759738.gif">
+    </div>
+    <div style="position: relative; top: 30px; z-index: 10;">
+      <div class="col">
+        <h4>Question 4</h4>
+      </div>
+      <div class="col">
+        <h2>Did you learn any foreign language?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col d-flex justify-content-end force">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+          <h3>Yeah</h3>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-start force">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>No man</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 5-->
+
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col">
+      <img src="gifs/project_1592657825989.gif">
+    </div>
+    <div style="position: relative; bottom: 50px; z-index: 10;">
+      <div class="col">
+        <h4>Question 5</h4>
+      </div>
+      <div class="col">
+        <h2>Did you read any new book?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col d-flex justify-content-end force">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+          <h3>Yes!</h3>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-start force">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Nope</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 6-->
+
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col">
+      <img src="gifs/project_1592657917624.gif">
+    </div>
+    <div class="col">
+      <h4>Question 6</h4>
+    </div>
+    <div class="col">
+      <h2>Did you try a new instrument, or developed on an instrument you already play?</h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col d-flex justify-content-end force">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+        <h3>Yes, I did!</h3>
+        </div>
+      </div>
+
+      <div class="col d-flex justify-content-start force">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>Not really</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 7-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 100px;">
+    <div class="col">
+      <img src="gifs/project_1592748425842.gif">
+    </div>
+
+    <div style="position: relative; bottom: 50px; z-index: 10;">
+      <div class="col">
+        <h4>Question 7</h4>
+      </div>
+      <div class="col">
+        <h2>Did you find yourself more busy, or less busy during this period, than before?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+          <h3>More Busy</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Less Busy</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>More or Less Same</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 8-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 100px;">
+    <div class="col">
+      <img src="gifs/project_1592657370096.gif">
+    </div>
+    <div style="position: relative; top: 20px; z-index: 10;">
+      <div class="col">
+        <h4>Question 8</h4>
+      </div>
+      <div class="col">
+        <h2>Did you feel anxious/ depressed?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+          <h3>Yeah, often!</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Never!</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+            <h3>It came and went, in periods</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 9-->
+
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col">
+      <img src="gifs/project_1592683796603.gif">
+    </div>
+    <div style="position: relative; top: 20px; z-index: 10;">
+      <div class="col">
+        <h4>Question 9</h4>
+      </div>
+      <div class="col">
+        <h2>Did you do any online course?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);cntpp(4);">
+          <h3>Yes</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>No</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);cntpp(4);">
+            <h3>Left In The Middle</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 10-->
+  
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col">
+      <img src="gifs/project_1592670153349.gif">
+    </div>
+    
+    <div class="col">
+      <h4>Question 10</h4>
+    </div>
+    <div class="col">
+      <h2>Did you play any online Egames during this period?</h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(4);">
+        <h3>Friggin' Yes!</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>No, it's a waste of time!</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(4);">
+          <h3>I did, sometimes, but never in an addictive way!</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 11-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 100px;">
+    <div class="col">
+      <img src="gifs/project_1592676959254.gif">
+    </div>
+
+    <div style="position: relative; bottom: 20px; z-index: 10;">
+    
+      <div class="col">
+        <h4>Question 11</h4>
+      </div>
+      <div class="col">
+        <h2>Did your sleep cycle get hampered?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col d-flex justify-content-end force">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+          <h3>Yes, to be honest</h3>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-start force">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>No, it didn't</h3>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+
 
   
-    <h4>Question 7</h4>
-    <h2>Did you find yourself more busy, or less busy during this period, than before?</h2>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>More Busy</h3>
+
+  <!--question 12-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 30px;">
+    <div class="col">
+      <img src="gifs/project_1592731748658.gif">
+    </div>
+    
+    <div class="col">
+      <h4>Question 12</h4>
+    </div>
+    <div class="col">
+      <h2>Did you maintain socialization as much possible in social media, or did you take a break from socialization all-together(including social medias)?</h2>
     </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Less Busy</h3>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(4);">
+        <h3>Maintained Socialization As Much Possible</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>Left all Social Medias, mostly</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(4);">
+          <h3>Controlled usage</h3>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+
+
+
+
+  <!--question 13-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 30px;">
+    <div class="col">
+      <img src="gifs/project_1592729805403.gif">
+    </div>
+    
+    <div class="col">
+      <h4>Question 13</h4>
+    </div>
+    <div class="col">
+      <h2>Did you order food from outside?</h2>
     </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Somewhat The Same</h3>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+        <h3>Yeah, often!</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(5);">
+          <h3>Once or Twice!</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(5);">
+          <h3>Never</h3>  
+        </div>
+      </div>
     </div>
-  </div>
-
-  </div>
+  </div> 
 
 
 
 
 
 
+  <!--question 14-->
 
-
-
-
-  <div class="question fade" style="padding-top: 50px;">
-    <img src="gifs/project_1592657370096.gif" height="40%" width="40%">
-    <h4>Question 8</h4>
-    <h2>Did you feel anxious/ depressed?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yeah, often!</h3>
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 70px;">
+    <div class="col">
+      <img src="gifs/project_1592751443616.gif">
     </div>
+     <div style="position: relative; top: 30px; z-index: 10;">
+      <div class="col">
+        <h4>Question 14</h4>
+      </div>
+      <div class="col">
+        <h2>Did you frequently play any board/ card games with family?</h2>
+      </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Never!</h3>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>Yes!</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Nada</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>A Few Times!</h3>
+          </div>
+        </div>
+      </div>
     </div>
+  </div> 
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>It came and went, in periods</h3>
+
+
+
+
+
+  <!--question 15-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 50px;">
+    <div class="col">
+      <img src="gifs/project_1592735580386.gif">
     </div>
-  </div>
+     <div style="position: relative; top: 40px; z-index: 10;">
+      <div class="col">
+        <h4>Question 15</h4>
+      </div>
+      <div class="col">
+        <h2>How many times did you go outside during April-May to pick up groceries?</h2>
+      </div>
 
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(5);">
+          <h3>Ordered online</h3>
+          </div>
+        </div>
 
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(5);">
+            <h3>Went to local marketplace less than or equal to 3 days</h3>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592683796603.gif" height="40%" width="40%">
-    <h4>Question 9</h4>
-    <h2>Did you do any online course?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes</h3>
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Went to local marketplace more than 3 days</h3>
+          </div>
+        </div>
+      </div>
     </div>
+  </div> 
 
-    <div class="answer" onclick="plusSlides(1);playAudio();"> 
-      <h3>No</h3>
+
+
+
+
+
+  <!--question 16-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 100px;">
+    <div class="col">
+      <img src="gifs/project_1592688746542.gif">
     </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Left In The Middle</h3>
+    
+    <div class="col">
+      <h4>Question 16</h4>
     </div>
-  </div>
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592670153349.gif" height="40%" width="40%">
-    <h4>Question 10</h4>
-    <h2>Did you play any online Egames during this period?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Freaking Yes!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>No, it's a waste of time!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>I did, sometimes, but never in an addictive way</h3>
-    </div>
-  </div>
-
-  
-
-
-
-
-
-
-
- <div class="question fade" style="padding-top: 70px;" >
-    <img src="gifs/project_1592676959254.gif" height="40%" width="40%">
-
-    <div style="position: relative; bottom: 60px; z-index: 10;">
-    <h4>Question 11</h4>
-    <h2>Did your sleep cycle get hampered?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes, tbh</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>No, it didn't</h3>
-    </div>
-  </div>
-  </div>
-
- 
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592731748658.gif" height="40%" width="40%">
-    <h4>Question 12</h4>
-    <h2>Did you maintain socialization as much possible in social media, or did you take a break from socialization all-together(including social medias)?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Maintained Socialization As Much Possible</h3>
+    <div class="col">
+      <h2>Did you go to the terrace more frequently than before?</h2>
     </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Left all Social Medias, mostly</h3>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+        <h3>Yes, more frequently than before</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>Same as before</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+          <h3>Didn't really go to the terrace!</h3>
+        </div>
+      </div>
     </div>
+  </div> 
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Controlled usage</h3>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592729805403.gif" height="40%" width="40%">
-    <h4>Question 13</h4>
-    <h2>Did you order food from outside?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yeah, often!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Once or Twice!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Never</h3>
-    </div>
-  </div>
-
- 
-
-
-
-
-
-
-
-  <div class="question fade" style="padding-top: 30px;">
-    <img src="gifs/project_1592751443616.gif" height="40%" width="40%">
-    <h4>Question 14</h4>
-    <h2>Did you frequently play any board/ card games with family?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Nada</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>A Few Times!</h3>
-    </div>
-  </div>
-
- 
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592735580386.gif" height="40%" width="40%">
-    <h4>Question 15</h4>
-    <h2>How many times did you go outside during April-May to pick up groceries?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Ordered online</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Went to local marketplace less than or equal to 3 days</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Went to local marketplace more than 3 days</h3>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-  <div class="question fade" style="padding-top: 60px;">
-    <img src="gifs/project_1592688746542.gif" height="40%" width="40%">
-    <h4>Question 16</h4>
-    <h2>Did you go to the terrace more frequently than before?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes, more frequently than before</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Same as before</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Didn't really go to the terrace!</h3>
-    </div>
-  </div>
 
  
 
    
 
+  <!--question 17-->
 
-
-
-
-  <div class="question fade" style="padding-top: 20px;">
-    <img src="gifs/project_1592744386251.gif" height="40%" width="40%">
-    <div style="position: relative; bottom: 60px; z-index: 10;">
-    <h4>Question 17</h4>
-    <h2>Did any of your family member lose job?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes</h3>
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 50px;">
+    <div class="col">
+      <img src="gifs/project_1592744386251.gif">
     </div>
+     <div style="position: relative; top: 60px; z-index: 10;">
+      <div class="col">
+        <h4>Question 17</h4>
+      </div>
+      <div class="col">
+        <h2>Did any of your family member lose job?</h2>
+      </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Fortunately, No</h3>
-    </div>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>Yes .-.</h3>
+          </div>
+        </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Salary Cutdown</h3>
-    </div>
-  </div>
-  </div>
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio(); cntpp(1);">
+            <h3>Fortunately, No</h3>
+          </div>
+        </div>
 
- 
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592738847883.gif" height="40%" width="40%">
-    <h4>Question 18</h4>
-    <h2>Did you watch movies/ serieses during the lockdown?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>A hell lot!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Kind of, sometimes!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Not really!</h3>
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(1);">
+            <h3>Salary Cutdown :(</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -530,52 +771,39 @@
 
 
 
+  <!--question 18-->
 
-
-
-  <div class="question fade" style="padding-top: 70px;">
-    <img src="gifs/project_1592733767781.gif" height="40%" width="40%">
-    <div style="position: relative; bottom: 60px; z-index: 10;">
-    <h4>Question 19</h4>
-    <h2>Did you gain weight or lose weight?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Gained</h3>
+  <div class="row row-cols-1 question fade1 top-buffer">
+    <div class="col">
+      <img src="gifs/project_1592738847883.gif">
     </div>
+     <div style="position: relative; top: 30px; z-index: 10;">
+      <div class="col">
+        <h4>Question 18</h4>
+      </div>
+      <div class="col">
+        <h2>Did you watch movies/ series during the lockdown?</h2>
+      </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>LOst</h3>
-    </div>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(4);">
+          <h3>A hell lot!</h3>
+          </div>
+        </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Constant</h3>
-    </div>
-  </div>
-  </div>
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(4);">
+            <h3>Kind of, sometimes!</h3>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-  <div class="question fade">
-    <img src="gifs/project_1592719889091.gif" height="40%" width="40%">
-    <h4>Question 20</h4>
-    <h2>Did you find yourself often listening to music to help you lighten your mood?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Very Often!</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>occasionally</h3>
-    </div>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Don't really listen to music that much</h3>
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>Not really!</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -584,23 +812,120 @@
 
 
 
+  <!--question 19-->
 
-
-  <div class="question fade">
-    <img src="gifs/project_1592742475831.gif" height="40%" width="40%">
-    <h4>Question 21</h4>
-    <h2>Did you workout inside home regularly?</h2>
-
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Hell, yes! I'm a fitness freak!</h3>
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 100px;">
+    <div class="col">
+      <img src="gifs/project_1592733767781.gif">
+    </div>
+     
+    <div class="col">
+      <h4>Question 19</h4>
+    </div>
+    <div class="col">
+      <h2>Did you gain weight or lose weight?</h2>
     </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Mad or what?</h3>
-    </div>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+        <h3>Gained</h3>
+        </div>
+      </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Sometimes, not regularly</h3>
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+          <h3>Lost</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);playAudio();">
+          <h3>Constant</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 20-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 30px;">
+    <div class="col">
+      <img src="gifs/project_1592719889091.gif">
+    </div>
+     <div style="position: relative; top: 30px; z-index: 10;">
+      <div class="col">
+        <h4>Question 20</h4>
+      </div>
+      <div class="col">
+        <h2>Did you find yourself often listening to music to help you lighten your mood?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);cntpp(4);">
+          <h3>Very Often!</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(4);">
+            <h3>Occasionally</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+            <h3>Don't really listen to music that much</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+  <!--question 21-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 30px;">
+    <div class="col">
+      <img src="gifs/project_1592742475831.gif">
+    </div>
+     <div style="position: relative; top: 30px; z-index: 10;">
+      <div class="col">
+        <h4>Question 21</h4>
+      </div>
+      <div class="col">
+        <h2>Did you workout inside home regularly?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+          <h3>Hell, yes! I'm a fitness freak!</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+            <h3>Mad or what?</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+            <h3>Sometimes, not regularly</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -610,50 +935,128 @@
 
 
 
-  <div class="question fade">
-    <img src="gifs/project_1592749329796.gif" height="40%" width="40%">
-    <h4>Question 22</h4>
-    <h2>Did you find any new hobbies/ career option during this quarantine that you'd love to pursue in future if you get time?</h2>
+  <!--question 22-->
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>Yes, I did!</h3>
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 30px;">
+    <div class="col">
+      <img src="gifs/project_1592749329796.gif">
+    </div>
+     <div style="position: relative; top: 30px; z-index: 10;">
+      <div class="col">
+        <h4>Question 22</h4>
+      </div>
+      <div class="col">
+        <h2>Did you find any new hobbies/ career option during this quarantine that you'd love to pursue in future if you get time?</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col d-flex justify-content-center force">
+          <div class="answer" onclick="plusSlides(1);playAudio();cntpp(2);">
+          <h3>Yes, I did!</h3>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-start force">
+          <div class="answer" onclick="plusSlides(1);playAudio();">
+            <h3>No man, stop bothering already</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--question 23-->
+
+  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 50px;">
+    <div class="col">
+      <img src="gifs/project_1592750670792.gif">
+    </div>
+     
+    <div class="col">
+      <h4>Question 23</h4>
+    </div>
+    <div class="col">
+      <h2>Was this quarantine a happy period for you overall, or sad/stressful?</h2>
     </div>
 
-    <div class="answer" onclick="plusSlides(1);playAudio();">
-      <h3>No man, stop bothering already</h3>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);pauseAudio();drumsroll();">
+        <h3>Quite Happy!</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);pauseAudio();drumsroll();cntpp(3);">
+          <h3>Kinda Sad/ Stressful</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="answer" onclick="plusSlides(1);pauseAudio();drumsroll();cntpp(3);">
+          <h3>Mixed/ Almost Same As Normal Life</h3>
+        </div>
+      </div>
     </div>
   </div>
 
 
 
+  <!--question sections ends-->
 
 
 
-  <div class="question fade" style="padding-top: 20px;">
-    <img src="gifs/project_1592750670792.gif" height="40%" width="40%">
-    <div style="position: relative; bottom: 30px; z-index: 10;">
-    <h4>Question 23</h4>
-    <h2>Was this quarantine a happy period for you overall, or sad/stressful?</h2>
 
-    <div class="answer">
-      <h3>Quite Happy!</h3>
+
+
+
+
+
+
+  <!--analysis section begins-->
+
+  <div class="row row-cols-1 question fade1" style="padding-top: 150px;">
+    <div class="col finisher slide_in">
+      <div class="col d-flex justify-content-start force">
+        <h1 style="font-family: 'FuturaHandwritten', sans-serif;"> This quarantine:</h1>
+        <br><br>
+      </div>
+      <div class="col forceshift" id="MyEdit">
+        <h1>Error is displaying final analysis result. Report admin.</h1>
+      </div>
     </div>
-
-    <div class="answer">
-      <h3>Kinda Sad/ Stressful</h3>
+    <div class="col endcredits">
+      <h2 style="color: #466995;">Thank You For Taking Our Survey :)</h2>
     </div>
-
-    <div class="answer">
-      <h3>Mixed/ Almost Same As Normal Life</h3>
+    <div class="col endcredits forcereduce" style="padding-top: 50px;">
+      <h3>Website Design: <a href="https://swastik.wtf/" target="_blank" style="outline: none;">Swastik Banerjee</a> <br> 
+      Animations: <a href="https://twitter.com/bhorchaj" target="_blank" style="outline:">Amrita Bhorchaj</a></h3>
+      <h5 style="position: relative; bottom: 30px;"><b><a href="mailto:bhattacharyaamrita2001@gmail.com" target="_blank" style="outline: none;">Contact For Collab</a></b></h5>
     </div>
   </div>
-  </div>
+
+
+  <!--analysis section ends-->
 
 
 
 
+
+
+
+
+
+
+  <!--JavaScript Code Begins-->
 
   <script>
+
+    //Slides JS
 
     var slideIndex=1;
     showSlides(slideIndex);
@@ -661,11 +1064,6 @@
     function plusSlides(n){
       showSlides(slideIndex+=n);
     }
-
-    function currentSlide(n){
-      showSlides(slideIndex=n);
-    }
-
 
   function showSlides(n) {
   var i;
@@ -676,17 +1074,28 @@
   }
 
   slides[slideIndex-1].style.display = "block";
-
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 } 
 
   </script>
 
+
+
+  <!--Audio Imports-->
+
   <audio id="press" src="sounds/button-28.mp3"></audio>
   <audio id="press1" src="sounds/button-3.mp3"></audio>
-  <audio id="press2" src="sounds/button-2.mp3"></audio>
   <audio id="bgr" src="sounds/musicc.mp3"></audio>
+  <audio id="drums" src="sounds/drumroll.mp3"></audio>
   
+  <!--Audio Import Ends-->
+
+
+
   <script>
+
+      //AUDIO JS 
 
       var snd=document.getElementById("press");
 
@@ -700,33 +1109,230 @@
           snd1.play();
       }
 
-
-      var snd2=document.getElementById("press2");
-
-      function playAudio2() {
-          snd2.play();
-      }
-
-
       var bgsnd=document.getElementById("bgr");
 
       function backgroundmusic() {
           bgsnd.play();
       }
-      
+
+      var drum=document.getElementById("drums");
+
+      function drumsroll() {
+          drum.play();
+      }
+
+      function pauseAudio() {
+      bgsnd.pause();
+} 
 
   </script>
 
 
+
+
+  <script>
+    //Analysis page's JS code
+
+    var cnt1=0; 
+    var cnt2=0;
+    var cnt3=0;
+    var cnt4=0;
+    var cnt5=0;
+
+    //cnt_i stores how many questions of category i for the analysis has the user answered
+
+
+
+
+
+    var arr1=[2,3,7];
+    var arr2=[2,2,4,7,6,4,9,1,8];
+    var arr3=[2,3,5,7,9,4,2,6];
+    var arr4=[2,1,6,5,6,2];
+    var arr5=[2,9,1];
+
+    //arr_i[j] stores no. of people who has answered j questions affirmatively for the i'th category analysis
+
+
+    var tot_ppl_less_than_u1=0;
+    var tot_ppl1=0;
+
+    var tot_ppl_less_than_u2=0;
+    var tot_ppl2=0;
+
+    var tot_ppl_less_than_u3=0;
+    var tot_ppl3=0;
+
+    var tot_ppl_less_than_u4=0;
+    var tot_ppl4=0;
+
+    var tot_ppl_less_than_u5=0;
+    var tot_ppl5=0;
+
+    //tot-ppl-less-than-ui stores no. of people who has answered less no. of affirmative questions than u for i'th category analysis
+    //tot_ppli stores total ppl who has answered questions of i'th category analysis
+
+    //Note, we are only storing affirmative answers here, as storing negative answers are not needed
+
+
+    function cntpp(n){ //cntpp(i) increments cnti by 1
+      if(n===1)
+        window.cnt1++;
+      else if(n===2)
+        window.cnt2++;
+      else if(n===3)
+        window.cnt3++;
+      else if(n===4)
+        window.cnt4++;
+      else if(n===5)
+        window.cnt5++;
+
+    
+    window.tot_ppl_less_than_u1=0;
+    for(var i=0;i<cnt1;i++){
+      window.tot_ppl_less_than_u1+=arr1[i];
+    }
+    window.tot_ppl1=0;
+    for(var i=0;i<arr1.length;i++){
+      window.tot_ppl1+=arr1[i];
+    }
+
+
+    window.tot_ppl_less_than_u2=0;
+    for(var i=0;i<cnt2;i++){
+      window.tot_ppl_less_than_u2+=arr2[i];
+    }
+    window.tot_ppl2=0;
+    for(var i=0;i<arr2.length;i++){
+      window.tot_ppl2+=arr2[i];
+    }
+
+
+    window.tot_ppl_less_than_u3=0;
+    for(var i=0;i<cnt3;i++){
+      window.tot_ppl_less_than_u3+=arr3[i];
+    }
+    window.tot_ppl3=0;
+    for(var i=0;i<arr3.length;i++){
+      window.tot_ppl3+=arr3[i];
+    }
+
+
+    window.tot_ppl_less_than_u4=0;
+    for(var i=0;i<cnt4;i++){
+      window.tot_ppl_less_than_u4+=arr4[i];
+    }
+    window.tot_ppl4=0;
+    for(var i=0;i<arr4.length;i++){
+      window.tot_ppl4+=arr4[i];
+    }
+
+
+    window.tot_ppl_less_than_u5=0;
+    for(var i=0;i<cnt5;i++){
+      window.tot_ppl_less_than_u5+=arr5[i];
+    }
+    window.tot_ppl5=0;
+    for(var i=0;i<arr5.length;i++){
+      window.tot_ppl5+=arr5[i];
+    }
+
+
+
+
+
+    var result1=(tot_ppl_less_than_u1/tot_ppl1)*100;
+    var result2=(tot_ppl_less_than_u2/tot_ppl2)*100;
+    var result3=(tot_ppl_less_than_u3/tot_ppl3)*100;
+    var result4=(tot_ppl_less_than_u4/tot_ppl4)*100;
+    var result5=(tot_ppl_less_than_u5/tot_ppl5)*100;
+    // calculating percentage
+
+
+  //giving non-zero values for really small results
+    if(result1===0)
+      result1=2;
+    if(result2===0)
+      result2=2;
+    if(result3===0)
+      result3=2;
+    if(result4===0)
+      result4=2;
+    if(result5===0)
+      result5=2;
+
+
+
+  //Printing the analysis report
+
+    document.getElementById("MyEdit").innerHTML = 
+    `<h3>You were <b style="color:#EB9605;">more privileged</b> than <u style="color:#EB9605;">${Math.floor(result1)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result1)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result1)}%">${Math.floor(result1)}% MORE PRIVILEGED
+        </div>
+      </div>
+      <br><br>
+      You <b style="color:#EB9605;">showed a tendency to be productive</b> more than <u style="color:#EB9605;">${Math.floor(result2)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result2)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result2)}%">${Math.floor(result2)}% MORE PRODUCTIVE
+        </div>
+      </div>
+      <br><br>
+      You were <b style="color:#EB9605;">more anxious</b> than <u style="color:#EB9605;">${Math.floor(result3)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result3)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result3)}%">${Math.floor(result3)}% MORE ANXIOUS
+        </div>
+      </div>
+      <br><br>
+      You were likely <b style="color:#EB9605;">addicted to electronic devices</b> more than <u style="color:#EB9605;">${Math.floor(result4)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result4)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result4)}%">${Math.floor(result4)}% MORE ADDICTED
+        </div>
+      </div>
+      <br><br>
+      You were <b style="color:#EB9605;">cautious about your health</b> more than <u style="color:#EB9605;">${Math.floor(result5)}% </u> of other people.
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+          aria-valuenow="${Math.floor(result5)}" aria-valuemin="0" aria-valuemax="100" style="width:${Math.floor(result5)}%">${Math.floor(result5)}% MORE CAUTIOUS
+        </div>
+      </div>
+      </h3>`;
+  }
+  </script>
+
+
+
+  <!-- JavaScript Code Ends-->
+
 </main>
+
+<!--main ends-->
+
+
+
+
+<!--footer begins-->
 
 
 <footer class="container-fluid py-3">
-  <h3 class="my_foot">Thanks for taking our survey!</h3>
-  <code>Copyright &copy; Swastik &amp; Amrita</code>
+  <div class="row row-cols-1 no-gutter">
+    <div class="col">
+      <h5>This website is open source</h5><a href="https://github.com/bhorchaj/How-Have-You-Been-During-COVID-19-Lockdown" target="_blank" style="outline: none;"><h6>See Github</h6></a>
+    </div>
+    <div class="col">
+      <code>MIT License | Copyright &copy; 2020 Swastik &amp; Amrita</code>
+    </div>
+  </div>
 </footer>
-  
-  </body>
 
+<!-- footer ends-->
+  
 </body>
+
+<!--body ends-->
+
 </html>
