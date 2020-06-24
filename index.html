@@ -1008,19 +1008,19 @@
 
     <div class="row row-cols-1 row-cols-md-3">
       <div class="col">
-        <div class="answer" onclick="plusSlides(1);playAudio();">
+        <div class="answer" onclick="plusSlides(1);pauseAudio();drumsroll();">
         <h3>Quite Happy!</h3>
         </div>
       </div>
 
       <div class="col">
-        <div class="answer" onclick="plusSlides(1);playAudio();cntpp(3);">
+        <div class="answer" onclick="plusSlides(1);pauseAudio();drumsroll();cntpp(3);">
           <h3>Kinda Sad/ Stressful</h3>
         </div>
       </div>
 
       <div class="col">
-        <div class="answer" onclick="plusSlides(1);playAudio();">
+        <div class="answer" onclick="plusSlides(1);pauseAudio();drumsroll();cntpp(3);">
           <h3>Mixed/ Almost Same As Normal Life</h3>
         </div>
       </div>
@@ -1036,9 +1036,22 @@
 
 
 
-  <div class="row row-cols-1 question fade1 top-buffer" style="padding-top: 150px;">
-    <div class="col" id="MyEdit">
-      <h1>Error</h1>
+  <div class="row row-cols-1 question fade1" style="padding-top: 150px;">
+    <div class="col finisher">
+      <div class="col d-flex justify-content-start force">
+        <h1 style="font-family: 'FuturaHandwritten', sans-serif;"> This quarantine:</h1>
+        <br><br>
+      </div>
+      <div class="col forceshift" id="MyEdit">
+        <h1>Error is displaying final analysis result. Report admin.</h1>
+      </div>
+    </div>
+    <div class="col endcredits">
+      <h3>Thank You For Taking Our Survey</h3>
+    </div>
+    <div class="col endcredits" style="padding-top: 50px;">
+      <h5>Website Design: Swastik Banerjee <br> 
+      Animations: Amrita Bhorchaj</h5>  
     </div>
   </div>
 
@@ -1056,6 +1069,9 @@
 
 
   <script>
+
+    //Slides JS
+
     var slideIndex=1;
     showSlides(slideIndex);
 
@@ -1078,11 +1094,22 @@
 
   </script>
 
+
+
+
   <audio id="press" src="sounds/button-28.mp3"></audio>
   <audio id="press1" src="sounds/button-3.mp3"></audio>
   <audio id="bgr" src="sounds/musicc.m4a"></audio>
+  <audio id="drums" src="sounds/drumroll.mp3"></audio>
   
+
+
+
+
   <script>
+
+      //AUDIO JS 
+
       var snd=document.getElementById("press");
 
       function playAudio() {
@@ -1100,11 +1127,28 @@
       function backgroundmusic() {
           bgsnd.play();
       }
+
+      var drum=document.getElementById("drums");
+
+      function drumsroll() {
+          drum.play();
+      }
+
+      function pauseAudio() {
+      bgsnd.pause();
+} 
+
   </script>
 
 
+
+
+
+
+
+
   <script>
-    //Analysis page code
+    //Analysis page's code
 
     var cnt1=0;
     var cnt2=0;
@@ -1112,11 +1156,11 @@
     var cnt4=0;
     var cnt5=0;
 
-    var arr1=[3,7];
-    var arr2=[2,4,7,6,4,9,1,8];
-    var arr3=[3,5,7,9,4,2,6];
-    var arr4=[1,6,5,6,2];
-    var arr5=[9,1];
+    var arr1=[2,3,7];
+    var arr2=[2,2,4,7,6,4,9,1,8];
+    var arr3=[2,3,5,7,9,4,2,6];
+    var arr4=[2,1,6,5,6,2];
+    var arr5=[2,9,1];
 
 
     var tot_ppl_less_than_u1=0;
@@ -1149,7 +1193,7 @@
 
     
     window.tot_ppl_less_than_u1=0;
-    for(var i=0;i<cnt1-1;i++){
+    for(var i=0;i<cnt1;i++){
       window.tot_ppl_less_than_u1+=arr1[i];
     }
     window.tot_ppl1=0;
@@ -1159,7 +1203,7 @@
 
 
     window.tot_ppl_less_than_u2=0;
-    for(var i=0;i<cnt2-1;i++){
+    for(var i=0;i<cnt2;i++){
       window.tot_ppl_less_than_u2+=arr2[i];
     }
     window.tot_ppl2=0;
@@ -1169,7 +1213,7 @@
 
 
     window.tot_ppl_less_than_u3=0;
-    for(var i=0;i<cnt3-1;i++){
+    for(var i=0;i<cnt3;i++){
       window.tot_ppl_less_than_u3+=arr3[i];
     }
     window.tot_ppl3=0;
@@ -1179,7 +1223,7 @@
 
 
     window.tot_ppl_less_than_u4=0;
-    for(var i=0;i<cnt4-1;i++){
+    for(var i=0;i<cnt4;i++){
       window.tot_ppl_less_than_u4+=arr4[i];
     }
     window.tot_ppl4=0;
@@ -1189,7 +1233,7 @@
 
 
     window.tot_ppl_less_than_u5=0;
-    for(var i=0;i<cnt5-1;i++){
+    for(var i=0;i<cnt5;i++){
       window.tot_ppl_less_than_u5+=arr5[i];
     }
     window.tot_ppl5=0;
@@ -1211,8 +1255,8 @@
 
     document.getElementById("MyEdit").innerHTML = "<h3>You were <b>more privileged</b> than <u>" + Math.floor(result1)+"% </u> of other people." +"<br><br>" + "You <b>showed a tendency to be productive</b> more than <u>" + Math.floor(result2)+"% </u> of other people." +"<br><br>"
       +"You were <b>more anxious</b> than <u>" + Math.floor(result3)+"% </u> of other people."+"<br><br>"
-      +"You <b>used electronic devices</b> more than <u>" + Math.floor(result4)+"% </u> of other people."+"<br><br>"
-      +"You were <b>more cautious about your health</b> than <u>" + Math.floor(result5)+"% </u> of other people.</h3>" + "<br><br><br>" + "<h4>Thank You For Taking Our Survey</h4>" + "<br><br>" + "<h5>Website Design: Swastik Banerjee" + "<br>" + "Animations: Amrita Bhorchaj</h5>";
+      +"You <b>were probably addicted to electronic devices</b> more than <u>" + Math.floor(result4)+"% </u> of other people."+"<br><br>"
+      +"You were <b>more cautious about your health</b> than <u>" + Math.floor(result5)+"% </u> of other people.</h3>";
   }
   </script>
 
