@@ -20,6 +20,9 @@
 **Font:** [Futura Handwritten](http://www.dafont.com/futurahandwritten.font) by Bill Snyder
 
 
+**Special Thanks to [Rishav Kundu](https://rishav.io/) for setting up and running the server for data collection**
+
+
 
 
 **To Fork or Download this repo**     
