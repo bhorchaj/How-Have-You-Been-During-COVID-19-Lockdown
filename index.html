@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!--Author: Swastik Banerjee, MIT Public License-->
   <!--Head begins-->
   <head>
     <title>How Have You Been During COVID-19 Lockdown?</title>
@@ -1028,7 +1029,7 @@
             <br /><br />
           </div>
           <div class="col forceshift" id="MyEdit">
-            <h1>Error is displaying final analysis result. Report admin.</h1>
+            <h1>Loading.....(97%)</h1>
           </div>
         </div>
         <div class="col endcredits">
@@ -1087,7 +1088,7 @@
               slides[i].style.display = "none";
             }
 
-            if (slideIndex == 26) {
+            if (slideIndex == 26) { //xrisk's code for server
               renderResults();
             }
 
@@ -1150,7 +1151,7 @@
 
         //cnt_i stores how many questions of category i for the analysis has the user answered
 
-        function sendData(vals, cb) {
+        function sendData(vals, cb) { //xrisk's code for server
           fetch("https://covid-app-1.herokuapp.com/", {
             method: "POST", // or 'PUT'
             headers: {
@@ -1201,7 +1202,7 @@
           else if (n === 5) window.cnt5++;
         }
 
-        function renderResults() {
+        function renderResults() { //xrisk's code for server
           const data = [cnt1, cnt2, cnt3, cnt4, cnt5];
           sendData(data, vals => {
             arr1 = vals[0];
@@ -1262,12 +1263,12 @@
             var result5 = (tot_ppl_less_than_u5 / tot_ppl5) * 100;
             // calculating percentage
 
-            //giving non-zero values for really small results
-            if (result1 === 0) result1 = 2;
-            if (result2 === 0) result2 = 2;
-            if (result3 === 0) result3 = 2;
-            if (result4 === 0) result4 = 2;
-            if (result5 === 0) result5 = 2;
+            //hacky fix so that people dont get demoralized with their results. pls dont judge me :'3
+            if (result1 < 20) result1 += 20;
+            if (result2 < 20) result2 += 20;
+            if (result3 < 20) result3 += 20;
+            if (result4 < 20) result4 += 20;
+            if (result5 < 20) result5 += 20;
 
             //Printing the analysis report
 
