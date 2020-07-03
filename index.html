@@ -1211,8 +1211,8 @@
             arr4 = vals[3];
             arr5 = vals[4];
 
-            window.tot_ppl_less_than_u1 = 0;
-            for (var i = 0; i < cnt1; i++) {
+            window.tot_ppl_less_than_u1 = arr1[0];
+            for (var i = 1; i < cnt1; i++) {
               window.tot_ppl_less_than_u1 += arr1[i];
             }
             window.tot_ppl1 = 0;
@@ -1220,8 +1220,8 @@
               window.tot_ppl1 += arr1[i];
             }
 
-            window.tot_ppl_less_than_u2 = 0;
-            for (var i = 0; i < cnt2; i++) {
+            window.tot_ppl_less_than_u2 = arr2[0];
+            for (var i = 1; i < cnt2; i++) {
               window.tot_ppl_less_than_u2 += arr2[i];
             }
             window.tot_ppl2 = 0;
@@ -1229,8 +1229,8 @@
               window.tot_ppl2 += arr2[i];
             }
 
-            window.tot_ppl_less_than_u3 = 0;
-            for (var i = 0; i < cnt3; i++) {
+            window.tot_ppl_less_than_u3 = arr3[0];
+            for (var i = 1; i < cnt3; i++) {
               window.tot_ppl_less_than_u3 += arr3[i];
             }
             window.tot_ppl3 = 0;
@@ -1238,8 +1238,8 @@
               window.tot_ppl3 += arr3[i];
             }
 
-            window.tot_ppl_less_than_u4 = 0;
-            for (var i = 0; i < cnt4; i++) {
+            window.tot_ppl_less_than_u4 = arr4[0];
+            for (var i = 1; i < cnt4; i++) {
               window.tot_ppl_less_than_u4 += arr4[i];
             }
             window.tot_ppl4 = 0;
@@ -1247,8 +1247,8 @@
               window.tot_ppl4 += arr4[i];
             }
 
-            window.tot_ppl_less_than_u5 = 0;
-            for (var i = 0; i < cnt5; i++) {
+            window.tot_ppl_less_than_u5 = arr5[0];
+            for (var i = 1; i < cnt5; i++) {
               window.tot_ppl_less_than_u5 += arr5[i];
             }
             window.tot_ppl5 = 0;
@@ -1263,12 +1263,8 @@
             var result5 = (tot_ppl_less_than_u5 / tot_ppl5) * 100;
             // calculating percentage
 
-            //hacky fix so that people dont get demoralized with their results. pls dont judge me :'3
-            if (result1 < 20) result1 += 20;
-            if (result2 < 20) result2 += 20;
-            if (result3 < 20) result3 += 20;
-            if (result4 < 20) result4 += 20;
-            if (result5 < 20) result5 += 20;
+        
+            
 
             //Printing the analysis report
 
