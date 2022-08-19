@@ -1,6 +1,6 @@
 !["How Have You Been During COVID-19 Lockdown"](photo_2020-06-25_00-08-13.jpg)
 
-#	PLAY IT HERE: [https://yourquarantinetime.live/](https://yourquarantinetime.live/)
+#	PLAY IT HERE: [https://bhorchaj.github.io/How-Have-You-Been-During-COVID-19-Lockdown/](https://bhorchaj.github.io/How-Have-You-Been-During-COVID-19-Lockdown/)
 
 *How Have You Been During COVID-19 Lockdown* is thankful to the many open source resources out there! Here is a full list of music, sounds, and code used:
 
